@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <----Navbar---->  
+    <div id="offer">
+        <p onclick="openoffer()">Get FREE shipping on all orders when you join Beaty Insider. Exclusions/terms apply.† Learn More ▶ <i class="fa-solid fa-caret-right"></i></p>
+    </div>
+    <div class="popupoffer">
+        <p class="closepopupoffer" onclick="closeoffer()">&#10005</p>
+        <h5>Beauty Insiders get FREE shipping on all orders.</h5>
+        <p class="ident">†We offer FREE Standard 1-3 Day Shipping on all US and Canada merchandise orders for Beauty Insider members, no minimum purchase required. Guest checkout orders receive FREE standard 1–3 day shipping with $50 minimum purchase. The standard shipping benefit is not valid on international shipping or on Kohls.com. You must check out with a valid Beauty Insider account to receive the standard shipping Benefit. Benefit has no cash value. No adjustments on previous purchases. Benefit is non-transferable. Benefit subject to change, alteration, or termination by Sephora in its sole discretion at any time.</p>
+    </div>
+    <div class="middlenav">
+        <a href="index.html"><img id="logo"src="https://www.sephora.com/img/ufe/logo.svg" alt=""></a>
+        <div class="input-icons">
+        <i class="fa fa-search icon"> Search</i>
+        <input type="text" class="input-field"name="serch" id="serch" >
+    </div>
+    <a href="profile.html" id="sing">
+        <button>
+            <img src="https://www.sephora.com/img/ufe/icons/me.svg" alt="">
+            <span>
+                Sign in <br>
+                for FREE shipping 🚚
+            </span>
+        </button>
+    </a>
+        <div class="chcicon">
+        <button>
+            <span><i class="fa-regular fa-comment fa-2x"></i></span>
+        </button>
+        <button>
+            <span><i class="fa-regular fa-heart fa-2x"></i></span>
+        </button>
+        <a href="carrito.html" id="basket">
+            <button>
+                <span><i class="fa-solid fa-basket-shopping fa-2x"></i></span>
+            </button>
+        </a>
+    </div>
+    </div>
+    <div class="mainnav">
+        <div class="openlistw"><a href="">New</a></div>
+        <div class="openlistw2"><a href="">Brands</a></div>
+        <div class="openlistw3"><a href="">Makeup</a></div>
+        <div class="openlistw4"><a href="">Skincare</a></div>
+        <div class="openlistw5"><a href="">Hair</a></div>
+        <div class="openlistw6"><a href="">Fragrance</a></div>
+        <div class="openlistw7"><a href="">Tool & Brushes</a></div>
+        <div class="openlistw8"><a href="">Bath & Body</a></div>
+        <div class="openlistw9"><a href="">Clean Beauty</a></div>
+        <div class="openlistw10"><a href="">Mini Size</a></div>
+        <div class="openlistw11"><a href="">Gifts</a></div>
+        <div class="openlistw12"><a href="">Beauty Under $20</a></div>
+        <div class="openlistw13"><a href="">Sales & Offers</a></div>
+    </div>
+    <div class="new">       
+        <div class="sectext">
+            <div>
+                <a href="">All New</a>
+                <a href="">Just Dropped</a>
+                <a href="">New Makeup</a>
+                <a href="">New Skincare</a>
+                <a href="">New Haircare</a>
+                <a href="">New Fragrance</a>
+                <a href="">New Bath & Body</a>
+                <a href="">New  Tool & Brushes</a>
+            </div>
+            <div>
+                <a href="">The Next Big Thing</a>
+                <a href="">Bestsellers</a>
+                <a href="">Allure Best of Beauty</a>
+                <a href="">Quizzes & Buying Guides</a>
+                <a href="">Clean Beauty Guide</a>
+                <a href="">Clean+ Planet Positive Beauty Guide</a>
+            </div>
+        </div>
+        <div class="secbanner">
+            <img src="https://www.sephora.com/contentimages/2024-7-6-fara-homidi-accelerate-brand-launch-site-desktop-global-navigation-button-en-us-can.jpg?imwidth=294" alt="">
+            <img src="https://www.sephora.com/contentimages/2024-06-daily-care-hair-mbc-site-desktop-universal-navigation-button-us-can-2053.jpg?imwidth=294" alt="">
+        </div>
+    </div>
+    <!-- middle part  -->
+    <div class="main-container">
+        <h2 style="margin-top: 20px;">My Basket</h2>
+        <div class="basket-container">
+            <div class="desc-container">
+                <div class="content">
+                    <h3 style="margin-bottom: 10px;">The Sephora Credit Card Program</h3>
+                    <span>Save 25% on this order when you open and use either Sephora Credit Card today*</span>
+                    <p style="color:grey;margin-top: 10px">*Subject to credit approval. Exclusions apply.</p>
+                </div>
+                <div class="button-container">
+                    <button>SEE DETAILS</button>
+                </div>
+            </div>
+            <div class="subtotal-container">
+                <div class="subtotal-details">
+                    <div>
+                        <span>Merchandise Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div>
+                        <span>Shipping & Handling</span>
+                        <span>FREE</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="subtotal-total">
+                    <span>Estimated Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="checkout-button">Checkout Shipped Items</button>
+            </div>
+        </div>
+        <div class="ship-container">
+            <h3>Get it Shipped</h3>
+            <p style="margin-top:10px;font-size:15px ">Beauty Insiders enjoy <strong>FREE standard shipping</strong> on all orders. <br>
+            Free returns on all purchases.*</p>
+            <div class="justproducts" id="shipped-items"></div>
+            <div class="sample-container" style="margin-top: 70px";>
+                <p style="text-align: center;">Get <strong>2</strong> free sample(s) with every order<br>
+                <strong>SELECT YOUR SAMPLE(S)</strong></p>
+                <p style="margin-left: 20px;"><strong>Want Free shipping?</strong><br>
+                Sign in to get free shipping for<br>this purchase</p>
+                <button class="samplebutton">Sign In</button>   
+            </div>
+        </div>
+        <div class="add-container">
+            <h3 style="margin-bottom: 20px;margin-top: 20px;">Add This</h3>
+            <div class="justproducts">
+                <div style="height: 230px;" class="product">
+                    <p id="newpop">NEW</p>
+                    <img src="https://www.sephora.com/productimages/sku/s2775617-main-zoom.jpg?imwidth=166" alt="">
+                    <h5>MAKEUP BY MARIO</h5>
+                    <p>Softsculpt® Multi-Use Bronzing & Shaping ...</p>
+                    <h4 style="margin-bottom: 20px;" data-price="36">$36.00</h4>
+                    <button class="add-button" data-name="MAKEUP BY MARIO" data-price="36">Add</button>
+                </div>
+                <div style="height:230px;" class="product">
+                    <p id="newpop">NEW</p>
+                    <img src="https://www.sephora.com/productimages/sku/s2781565-main-zoom.jpg?imwidth=166" alt="">
+                    <h5>Summer Fridays</h5>
+                    <p>Lip Butter Balm for Hydration & Shine </p>
+                    <h4 style="margin-bottom: 20px;" data-price="24">$24.00</h4>
+                    <button class="add-button" data-name="Summer Fridays" data-price="24">Add</button>
+                </div>
+                <div style="height:230px;" class="product">
+                    <p style="z-index:2;"id="newpopb">LIMITED EDITION</p>
+                    <img src="https://www.sephora.com/productimages/sku/s2535581-main-zoom.jpg?imwidth=166" alt="">
+                    <h5>Glow Recipe</h5>
+                    <p>Watermelon Glow PHA + BHA Pore-Tight Toner</p>
+                    <h4 style="margin-bottom: 20px;" data-price="35">$35.00</h4>
+                    <button class="add-button" data-name="Glow Recipe" data-price="35">Add</button>
+                </div>
+                <div style= "height:230px;" class="product">
+                    <p style="z-index:2;"id="newpopb">LIMITED EDITION</p>
+                    <img src="https://www.sephora.com/productimages/sku/s2743243-main-zoom.jpg?imwidth=166" alt="">
+                    <h5>LANEIGE</h5>
+                    <p>Lip Sleeping Mask Intense Hydration with Vitamin C</p>
+                    <h4 data-price="24">$24.00</h4>
+                    <button class="add-button" data-name="LANEIGE" data-price="24">Add</button>
+                </div>
+                <div style="height:230px;" class="product">
+                    <p style="z-index:2;"id="newpopb">LIMITED EDITION</p>
+                    <img src="https://www.sephora.com/productimages/sku/s2743045-main-zoom.jpg?imwidth=166" alt="">
+                    <h5>LANEIGE</h5>
+                    <p>Dreamy Lip Kit</p>
+                    <h4 style="margin-bottom: 20px;" data-price="20"><br>$20.00</h4>
+                    <button class="add-button" data-name="LANEIGE Dreamy Lip Kit" data-price="20">Add</button>
+                </div>
+                <div style="height:230px;" class="product">
+                    <p id="newpop">NEW</p>
+                    <img src="https://www.sephora.com/productimages/sku/s2743037-main-zoom.jpg?imwidth=166" alt="">
+                    <h5>LANEIGE</h5>
+                    <p>Lip Glowy Balm</p>
+                    <h4 style="margin-bottom: 20px;" data-price="19"><br>$19.00</h4>
+                    <button class="add-button" data-name="LANEIGE Lip Glowy Balm" data-price="19">Add</button>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!-- footer part -->
+    <div class="feedback">
+        <p id="openfeedback" onclick="openfeedback()">Website feedback? Let us know ></p>
+    </div>
+    <div class="popupfeedback">
+        <p class="closepopupfeedback" onclick="closeofferfb()">&#10005</p>
+        <h5>Sephora Feedback</h5>
+        <p class="ident"> Your Feedback Is Very Important For Us.</p>
+        <form>
+        <Label>Email</Label>
+        <input type="email" name="" id="email">
+        <label>Rating</label>
+        <select name="rate" id="rate">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    <div class="footertop">
+        <div>
+            <img src="https://www.sephora.com/img/ufe/icons/find-store.svg" alt="">
+            <p>Find a Store Choose Your Store</p>
+        </div>
+        <div>
+            <span><i class="fa-regular fa-comment fa-1x"></i></span>
+            <p>Live Beauty Help Chat is unavailable</p>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/img/ufe/icons/app.svg" alt="">
+            <p>Get the App </br>
+            Download now</p>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/img/ufe/icons/sms-ko.svg" alt="">
+            <p>Get Sephora Text Alerts Sing up Now</p>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/img/ufe/icons/cc-outline-ko.svg" alt="">
+            <p>Sephora Credit Card Program</br>
+            Want 25% off your Sephora purchase?</p>
+
+        </div>
+    </div>
+    <hr>
+    <div class="footermiddle">
+        <div>
+            <h4>About Sephora</h4>
+            <p>About Sephora</p>
+            <p>Newsroom</p>
+            <p>Careers</p>
+            <p>Sephora Social Impact</p>
+        </div>
+        <div>
+            <h4>My Sephora</h4>
+            <p>Beauty Insider</p>
+            <p>Sephora Credit Card</p>
+            <p>Community Profile</p>
+            <p>Order Status</p>
+        </div>
+        <div>
+            <h4>Help</h4>
+            <p>Customer Service</p>
+            <p>Returns & Exchanges</p>
+            <p>Delivery and Pickup Options</p>
+            <p>Shipping</p>
+
+        </div>
+        <div>
+            <h4>Region & Language</h4>
+            <span><img src="https://www.sephora.com/img/ufe/flags/us.svg" alt=""> United states - English</span>
+            <span><img src="https://www.sephora.com/img/ufe/flags/ca.svg" alt=""> Canada - English</span>
+            <span><img src="https://www.sephora.com/img/ufe/flags/ca.svg" alt=""> Canada - Francais</span>
+        </div>
+        <div>
+            <h1>We Belong to </br>
+            Something Beautiful</h1>
+            <div>
+                <h4>Sing up for Sephora Emails</h4>
+                <input type="email" placeholder="Enter Your Email Address" name="" id="">
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footerbottom">
+        <div>
+            <p>All rights reserved.</p>
+            <p>Privacy PolicyTerms of UseAccessibilitySitemapCA - Do Not Sell My Personal Information</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+            <i class="fa-brands fa-youtube fa-2x"></i>
+            <i class="fa-brands fa-pinterest fa-2x"></i>
+            <i class="fa-brands fa-snapchat fa-2x"></i>
+            <i class="fa-brands fa-tiktok fa-2x"></i>
+        </div>
+    </div>
+</body>
+</html>
+<!-- scripts -->
+<script src="script/carrito.js"></script>
